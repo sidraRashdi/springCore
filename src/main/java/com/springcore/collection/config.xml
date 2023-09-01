@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+ 
+ <bean class="com.springcore.collection.employee" name="employee">
+ 
+  <property name="name" value="sidra"/>
+  <property name="Address">
+  <list>
+          <value>1</value>
+          <value>2</value>
+          <value>3</value>
+          <value>4</value>
+   </list>
+   </property>
+   
+    <property name="Phones">
+  <list>
+          <value>11111</value>
+          <value>22222</value>
+          <value>33333</value>
+          <value>44444</value>
+   </list>
+   </property>
+   
+   
+   <property name="courses">
+  <map>
+          <entry  key="Java" value="2months"></entry>
+          <entry  key="Python" value="3months"></entry>
+   </map>
+   </property>
+  
+ 
+   
+
+ 
+ 
+ </bean>
+ 
+
+</beans>
